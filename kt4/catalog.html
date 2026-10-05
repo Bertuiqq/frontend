@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D каталог украшений - Аурум</title>
+    <meta name="description" content="3D каталог украшений Аурум: кольцо, серьги, подвеска, браслет и подарочная коробка. Крутите модель мышкой и меняйте цвет металла.">
+    <meta name="keywords" content="3D каталог, украшения в 3D, кольцо, серьги, подвеска, браслет">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container header">
+            <a href="index.html" class="logo">Аурум</a>
+            <nav>
+                <ul class="menu">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="catalog.html">3D каталог</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1>3D каталог</h1>
+        <p>Выберите украшение и покрутите его мышкой</p>
+
+        <section class="catalog">
+            <div class="scene-box"></div>
+
+            <aside class="panel">
+                <h2 class="model-name">Кольцо Лёд</h2>
+                <p class="price model-price">3200 руб.</p>
+
+                <h3>Украшение</h3>
+                <div class="buttons">
+                    <button class="model-btn">Кольцо</button>
+                    <button class="model-btn">Серьги</button>
+                    <button class="model-btn">Подвеска</button>
+                    <button class="model-btn">Браслет</button>
+                    <button class="model-btn">Коробка</button>
+                </div>
+
+                <h3>Цвет металла</h3>
+                <div class="buttons">
+                    <button class="texture-btn">Золото</button>
+                    <button class="texture-btn">Серебро</button>
+                    <button class="texture-btn">Розовое золото</button>
+                </div>
+
+                <h3>Фон</h3>
+                <div class="buttons">
+                    <button class="bg-btn">Светлый</button>
+                    <button class="bg-btn">Тёмный</button>
+                </div>
+
+                <button class="rotate-btn">Остановить вращение</button>
+                <button class="buy-btn">В корзину</button>
+                <p>В корзине: <span class="counter">0</span></p>
+            </aside>
+        </section>
+    </main>
+
+    <footer>
+        <p>Аурум - украшения из медицинской стали</p>
+        <p>© 2026 Аурум</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+    <script src="3d.js"></script>
+</body>
+</html>
